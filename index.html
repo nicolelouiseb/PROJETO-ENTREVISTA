@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>PROJETO ESTÁGIO</title>
+</head>
+<body>
+    <header>
+        <div class="container_menu">
+            <div class="wrapper_menu">
+                <div class="logo">
+                    <img src="imagens/logo-in8-dev.svg" alt="logo" class="logo">
+                </div>
+                <div id="nav">
+                    <button id="btn-mobile"><span class="icon"><img src="icones/hamburguer.svg" width="30" alt="" id="icon"><span class="icon"><img src="icones/hamburguer-aberto0.svg" width="30" alt="" id="icon-branco"></button>
+                    <ul id="menu">
+                        <li><a href="#">cadastro</a></li>
+                        <li><a href="#">lista</a></li>
+                        <li><a href="#">sobre mim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <div class="container_conteudo">
+            <div class="conteudo">
+                <div class="titulo">
+                    <h1>ESTÁGIO</h1>
+                    <h2>PROCESSO SELETIVO</h2>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <!-- MAIN PARTE DO CADASTRO -->
+        <div class="container_cadastro">
+            <div class="titulo-cadastro">
+                <h2>CADASTRO</h2>
+            </div>
+            <div class="parte-cadastro" id="input-cadastro">
+                <form action="/cadastro_cliente">
+                    <li class="form form-nome">
+                        <div class="seletor">
+                         <h3>Nome</h3>   
+                        </div>
+                        <input type="text" class="input-name" id="name" name="form-name" placeholder="Insira seu nome">
+                    </li>
+                    <li class="form form-email">
+                        <div class="seletor">
+                            <h3>Email</h3>   
+                        </div>
+                        <input type="email" id="email" class="input-email" name="form-email" placeholder="Insira seu email">
+                    </li>
+                    <li class="form form-nascimento">
+                        <div class="seletor">
+                            <h3>Nascimento</h3>   
+                        </div>
+                        <input type="date" id="nascimento" class="input-born" name="form-nascimento" placeholder="Insira uma data">
+                    </li>
+                    <li class="form form-telefone">
+                        <div class="seletor">
+                            <h3>Telefone</h3>   
+                        </div>
+                        <input type="tel" id="telefone" class="input-phone" name="form-telefone" placeholder="Insira seu telefone">
+                    </li>
+                    <div class="btn-sumit">
+                        <input type="submit" id="submit" value="CADASTRAR">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- MAIN PARTE DA LISTA/TABELA -->
+        <div class="container_lista">
+            <div class="titulo-lista">
+                <h2>LISTA DE CADASTRO</h2>
+            </div>
+            <div class="tabelinha" id="tabela">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">NOME</th>
+                            <th scope="col">E-MAIL</th>
+                            <th scope="col">NASCIMENTO</th>
+                            <th scope="col">TELEFONE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td class="name"></td>
+                            <td class="email"></td>
+                            <td class="born"></td>
+                            <td class="phone"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td class="name"></td>
+                            <td class="email"></td>
+                            <td class="born"></td>
+                            <td class="phone"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td class="name"></td>
+                            <td class="email"></td>
+                            <td class="born"></td>
+                            <td class="phone"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td class="name"></td>
+                            <td class="email"></td>
+                            <td class="born"></td>
+                            <td class="phone"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container_footer">
+            <ul class="footer">
+                <li class="footer" id="footer-name">Nicole Louise Braz Vieira</li>
+                <li class="footer" id="footer-email">nicole.louise.braz@gmail.com</li>
+                <li class="footer" id="footer-phone">(31)98326-2131</li>
+                <li class="footer">Faculdade de Minas Gerais</li>
+            </ul>
+        </div>
+    </footer>
+
+
+<!-- JavaScript  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+
+</html>
